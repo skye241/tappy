@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4og2624k7mj7"]
+
+[ext_resource type="Texture2D" uid="uid://bj38hhuawj2tb" path="res://assets/background/rocks_2.png" id="1_1h20r"]
+[ext_resource type="Texture2D" uid="uid://bmeeu6384gqe6" path="res://assets/background/rocks_1.png" id="2_r6san"]
+
+[node name="ParallaxBg" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-120, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(961, 309)
+texture = ExtResource("1_1h20r")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-80, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(961, 309)
+texture = ExtResource("2_r6san")

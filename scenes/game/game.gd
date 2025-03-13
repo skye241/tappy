@@ -28,3 +28,4 @@ func _on_timer_timeout() -> void:
 func game_over() -> void:
 	get_tree().paused = true
 	
+	

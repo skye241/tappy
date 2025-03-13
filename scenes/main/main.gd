@@ -1,4 +1,5 @@
 extends Control
+@onready var high_score_label: Label = $MarginContainer/HighScoreLabel
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -6,4 +7,5 @@ func _unhandled_input(event: InputEvent) -> void:
 		GameManager.load_game_scene()
 
 func _ready() -> void:
+	high_score_label.text = "%04d" % ScoreManager.high_score
 	get_tree().paused = false

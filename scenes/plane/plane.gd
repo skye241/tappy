@@ -8,7 +8,12 @@ const GRAVITY: float = 600.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var engine_sound: AudioStreamPlayer2D = $EngineSound
 
+
+func _ready() -> void:
+	engine_sound.play()
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	velocity.y += GRAVITY * delta
