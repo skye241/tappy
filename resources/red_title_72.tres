@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://hsix1m2m0ur8"]
+
+[ext_resource type="FontFile" uid="uid://44thbpfre6qd" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_63rm3"]
+
+[resource]
+font = ExtResource("1_63rm3")
+font_size = 72
+font_color = Color(0.800599, 0, 0.0376473, 1)
+outline_size = 5
+outline_color = Color(0.151276, 0.151276, 0.151276, 1)
+shadow_color = Color(0.8, 0, 0.0392157, 0.411765)
